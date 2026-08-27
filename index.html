@@ -3,283 +3,190 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deepak Wadhwa OFFICIAL™ - Trading Signals</title>
-    
-    <!-- Meta Pixel Code -->
-    <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1364795122432438');
-    fbq('track', 'PageView');
-
-    // Function to track Subscribe Event on CTA click
-    function trackSubscribe() {
-        fbq('track', 'Subscribe');
-    }
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1364795122432438&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Meta Pixel Code -->
-
+    <title>Deepak Wadhwa Official</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-        }
-
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
         body {
-            background: radial-gradient(circle at top, #111827 0%, #030712 100%);
-            color: #ffffff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 20px 15px;
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f6fa;
         }
-
-        .container {
-            width: 100%;
-            max-width: 420px;
-            background: rgba(17, 24, 39, 0.85);
-            backdrop-filter: blur(12px);
-            border-radius: 24px;
-            padding: 32px 20px;
-            text-align: center;
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+        .btn-shadow {
+            box-shadow: 0 10px 20px -5px rgba(22, 100, 255, 0.4);
         }
-
-        .profile-wrapper {
-            position: relative;
-            width: 105px;
-            height: 105px;
-            margin: 0 auto 16px auto;
-        }
-
-        .profile-img-container {
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            background: linear-gradient(135deg, #f59e0b, #eab308, #84cc16);
-            padding: 3px;
-            box-shadow: 0 0 20px rgba(245, 158, 11, 0.3);
-        }
-
-        .profile-img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 50%;
-            background-color: #1f2937;
-        }
-
-        .verified-badge {
-            position: absolute;
-            bottom: 2px;
-            right: 2px;
-            background: #3b82f6;
-            color: white;
-            border-radius: 50%;
-            width: 24px;
-            height: 24px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 13px;
-            border: 2px solid #111827;
-            font-weight: bold;
-        }
-
-        .title {
-            color: #fbbf24;
-            font-size: 22px;
-            font-weight: 800;
-            letter-spacing: 0.5px;
-            margin-bottom: 6px;
-            text-transform: uppercase;
-        }
-
-        .badge-tag {
-            display: inline-block;
-            background: rgba(251, 191, 36, 0.1);
-            color: #fbbf24;
-            border: 1px solid rgba(251, 191, 36, 0.25);
-            font-size: 12px;
-            font-weight: 700;
-            padding: 4px 12px;
-            border-radius: 20px;
-            margin-bottom: 12px;
-            letter-spacing: 1px;
-        }
-
-        .description {
-            font-size: 14px;
-            color: #9ca3af;
-            margin-bottom: 22px;
-            line-height: 1.4;
-        }
-
-        .cta-button {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            width: 100%;
-            background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
-            color: #ffffff;
-            font-weight: 800;
-            font-size: 17px;
-            text-decoration: none;
-            padding: 16px 12px;
-            border-radius: 14px;
-            margin-bottom: 20px;
-            box-shadow: 0 8px 25px rgba(34, 197, 94, 0.35);
-            transition: all 0.2s ease;
-            letter-spacing: 0.5px;
-        }
-
-        .cta-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 12px 30px rgba(34, 197, 94, 0.5);
-        }
-
-        .telegram-icon {
-            width: 22px;
-            height: 22px;
-            fill: currentColor;
-        }
-
-        .trust-box {
-            background: rgba(31, 41, 55, 0.6);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            border-radius: 14px;
-            padding: 14px;
-            margin-bottom: 22px;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-        }
-
-        .trust-item {
-            font-size: 13px;
-            font-weight: 600;
-            color: #e5e7eb;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 6px;
-        }
-
-        .trust-item span {
-            color: #22c55e;
-            font-weight: 800;
-        }
-
-        .features-list {
-            text-align: left;
-            margin-bottom: 22px;
-            background: rgba(255, 255, 255, 0.02);
-            padding: 16px;
-            border-radius: 14px;
-            border: 1px solid rgba(255, 255, 255, 0.03);
-        }
-
-        .feature-item {
-            font-size: 15px;
-            font-weight: 600;
-            color: #f3f4f6;
-            margin-bottom: 12px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .feature-item:last-child {
-            margin-bottom: 0;
-        }
-
-        .check-badge {
-            background: rgba(34, 197, 94, 0.15);
-            color: #22c55e;
-            width: 22px;
-            height: 22px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 12px;
-            font-weight: bold;
-            flex-shrink: 0;
+        .card-shadow {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
         }
     </style>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1364795122432438');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1364795122432438&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+    
 </head>
-<body>
+<body class="flex flex-col items-center min-h-screen px-4 py-8 text-slate-800">
 
-    <div class="container">
-        <!-- Profile Picture with Verified Badge -->
-        <div class="profile-wrapper">
-            <div class="profile-img-container">
-                <img src="Deepak.jpg" alt="Deepak Wadhwa OFFICIAL™" class="profile-img">
-            </div>
-            <div class="verified-badge">✓</div>
+    <main class="w-full max-w-md flex flex-col items-center text-center">
+        
+        <div class="inline-flex items-center bg-emerald-100 text-emerald-800 text-sm font-semibold px-4 py-1.5 rounded-full mb-6">
+            <span class="w-2.5 h-2.5 bg-emerald-500 rounded-full mr-2 animate-pulse"></span>
+            5,947 Traders Online Now
         </div>
 
-        <!-- Header Titles & Tags -->
-        <h1 class="title">Deepak Wadhwa OFFICIAL™</h1>
-        <div class="badge-tag">NIFTY • BANKNIFTY • OPTIONS</div>
-        <p class="description">Daily Intraday Trading Signals & High-Precision Market Analysis</p>
+        <div class="relative mb-4">
+            <div class="w-32 h-32 rounded-full border-4 border-white shadow-lg overflow-hidden flex items-center justify-center bg-gray-100">
+                <img src="Deepak.jpg" alt="Deepak Wadhwa" class="w-full h-full object-cover">
+            </div>
+        </div>
 
-        <!-- Top CTA Button -->
-        <a href="https://t.me/+vumwjcEl-tA5Mzdl" class="cta-button" target="_blank" onclick="trackSubscribe()">
-            <svg class="telegram-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.02-1.96 1.25-5.54 3.67-.52.36-.99.53-1.42.52-.47-.01-1.37-.26-2.03-.48-.82-.27-1.47-.42-1.42-.88.03-.24.37-.49 1.02-.75 3.99-1.74 6.66-2.89 8.01-3.45 3.82-1.59 4.61-1.87 5.13-1.88.11 0 .37.03.54.17.14.12.18.28.2.45-.02.07-.02.14-.03.22z"/></svg>
-            JOIN FREE TELEGRAM CHANNEL
+        <h1 class="text-3xl font-black tracking-tight text-slate-900 mb-1">Deepak Wadhwa Official</h1>
+        <p class="text-blue-600 font-bold text-sm sm:text-base flex items-center justify-center gap-1.5 mb-2">
+            🏆 <span>India’s No.1 Stock Market Channel</span>
+        </p>
+
+        <div class="flex items-center justify-center text-amber-400 gap-1 text-base mb-1">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <p class="text-xs font-medium text-slate-500 mb-6">4.9/5 (2340 Reviews)</p>
+
+        <a href="https://t.me/+HT1-8Rqo0jE4Yjll" target="_blank" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-6 rounded-2xl text-lg flex items-center justify-center gap-2 btn-shadow transition-all duration-200 mb-6">
+            Join Free Telegram Channel <i class="fa-solid fa-arrow-right text-base"></i>
         </a>
 
-        <!-- Trust Box -->
-        <div class="trust-box">
-            <div class="trust-item">
-                <span>✓</span> 5,000+ Traders
+        <div class="grid grid-cols-3 gap-3 w-full mb-8">
+            <div class="bg-white p-4 rounded-2xl card-shadow border border-slate-100 flex flex-col items-center">
+                <span class="text-xl font-extrabold text-blue-600">50K+</span>
+                <span class="text-xs font-medium text-slate-500 mt-1">Members</span>
             </div>
-            <div class="trust-item">
-                <span>✓</span> Consistent Setups
+            <div class="bg-white p-4 rounded-2xl card-shadow border border-slate-100 flex flex-col items-center">
+                <span class="text-xl font-extrabold text-blue-600">5+</span>
+                <span class="text-xs font-medium text-slate-500 mt-1">Years</span>
             </div>
-        </div>
-
-        <!-- Features List -->
-        <div class="features-list">
-            <div class="feature-item">
-                <div class="check-badge">✓</div>
-                <span>5–7 High Probability Trades</span>
-            </div>
-            <div class="feature-item">
-                <div class="check-badge">✓</div>
-                <span>Exact Entry, Stop Loss & Target</span>
-            </div>
-            <div class="feature-item">
-                <div class="check-badge">✓</div>
-                <span>Beginner Friendly Guidance</span>
-            </div>
-            <div class="feature-item">
-                <div class="check-badge">✓</div>
-                <span>Live Market Real-Time Updates</span>
+            <div class="bg-white p-4 rounded-2xl card-shadow border border-slate-100 flex flex-col items-center">
+                <span class="text-xl font-extrabold text-blue-600">95%</span>
+                <span class="text-xs font-medium text-slate-500 mt-1">Accuracy</span>
             </div>
         </div>
 
-        <!-- Bottom CTA Button -->
-        <a href="https://t.me/+vumwjcEl-tA5Mzdl" class="cta-button" target="_blank" onclick="trackSubscribe()">
-            <svg class="telegram-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.02-1.96 1.25-5.54 3.67-.52.36-.99.53-1.42.52-.47-.01-1.37-.26-2.03-.48-.82-.27-1.47-.42-1.42-.88.03-.24.37-.49 1.02-.75 3.99-1.74 6.66-2.89 8.01-3.45 3.82-1.59 4.61-1.87 5.13-1.88.11 0 .37.03.54.17.14.12.18.28.2.45-.02.07-.02.14-.03.22z"/></svg>
-            JOIN FREE TELEGRAM CHANNEL
+        <h2 class="text-xl font-extrabold text-slate-900 mb-1">
+            Get <span class="text-blue-600">FREE Daily Calls</span>
+        </h2>
+        <h3 class="text-lg font-bold text-slate-900 mb-2">
+            for NIFTY, BANKNIFTY & SENSEX
+        </h3>
+        <p class="text-xs font-medium text-slate-500 mb-6 max-w-xs">
+            Join thousands of traders getting daily market analysis
+        </p>
+
+        <div class="w-full bg-amber-100/70 border border-amber-200/50 text-amber-800 text-sm font-bold py-3.5 px-4 rounded-2xl mb-4 flex items-center justify-center gap-2">
+            🔥 <span>Limited FREE Access Available</span>
+        </div>
+
+        <div class="w-full flex flex-col gap-3.5 mb-6">
+            <div class="bg-white p-4 rounded-2xl card-shadow border border-slate-100 flex items-center gap-4 text-left">
+                <div class="text-2xl min-w-[28px] text-center">📊</div>
+                <span class="font-bold text-slate-800 text-base">Daily Nifty & BankNifty Levels</span>
+            </div>
+            
+            <div class="bg-white p-4 rounded-2xl card-shadow border border-slate-100 flex items-center gap-4 text-left">
+                <div class="text-2xl min-w-[28px] text-center">🎓</div>
+                <span class="font-bold text-slate-800 text-base">Educational Market Analysis</span>
+            </div>
+
+            <div class="bg-white p-4 rounded-2xl card-shadow border border-slate-100 flex items-center gap-4 text-left">
+                <div class="text-2xl min-w-[28px] text-center">👥</div>
+                <span class="font-bold text-slate-800 text-base">50,000+ Subscribers Community</span>
+            </div>
+        </div>
+
+        <a href="https://t.me/+HT1-8Rqo0jE4Yjll" target="_blank" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-6 rounded-2xl text-lg flex items-center justify-center gap-2 btn-shadow transition-all duration-200 mb-8">
+            Join Free Telegram Channel <i class="fa-solid fa-arrow-right text-base"></i>
         </a>
+
+        <footer class="w-full text-center border-t border-slate-200 pt-6">
+            <div class="flex flex-wrap justify-center gap-4 text-xs font-semibold text-slate-600 mb-4">
+                <button onclick="openModal('aboutModal')" class="hover:text-blue-600 transition">About Us</button>
+                <span>•</span>
+                <button onclick="openModal('disclaimerModal')" class="hover:text-blue-600 transition">Disclaimer</button>
+                <span>•</span>
+                <button onclick="openModal('termsModal')" class="hover:text-blue-600 transition">Terms & Conditions</button>
+                <span>•</span>
+                <button onclick="openModal('contactModal')" class="hover:text-blue-600 transition">Contact Us</button>
+            </div>
+            <p class="text-[11px] leading-relaxed text-slate-400 font-medium">
+                © Deepak Wadhwa Official. All Rights Reserved.
+            </p>
+        </footer>
+
+    </main>
+
+    <div id="aboutModal" class="fixed inset-0 bg-black/50 backdrop-blur-sm hidden flex items-center justify-center p-4 z-50">
+        <div class="bg-white rounded-2xl p-6 max-w-sm w-full text-left shadow-xl relative">
+            <button onclick="closeModal('aboutModal')" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 text-lg"><i class="fa-solid fa-xmark"></i></button>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">About Us</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+                Deepak Wadhwa Official is a premier stock market research and educational platform dedicated to helping retail traders analyze Nifty, BankNifty, and Sensex markets with precision.
+            </p>
+        </div>
     </div>
 
+    <div id="disclaimerModal" class="fixed inset-0 bg-black/50 backdrop-blur-sm hidden flex items-center justify-center p-4 z-50">
+        <div class="bg-white rounded-2xl p-6 max-w-sm w-full text-left shadow-xl relative">
+            <button onclick="closeModal('disclaimerModal')" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 text-lg"><i class="fa-solid fa-xmark"></i></button>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Disclaimer</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+                This channel is strictly for educational purposes only. Trading in equity and derivatives involves high risk. Please consult your SEBI-registered financial advisor before making any investment or trading decisions.
+            </p>
+        </div>
+    </div>
+
+    <div id="termsModal" class="fixed inset-0 bg-black/50 backdrop-blur-sm hidden flex items-center justify-center p-4 z-50">
+        <div class="bg-white rounded-2xl p-6 max-w-sm w-full text-left shadow-xl relative">
+            <button onclick="closeModal('termsModal')" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 text-lg"><i class="fa-solid fa-xmark"></i></button>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Terms & Conditions</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+                By joining our Telegram channel, you agree that all information shared is for personal learning. We are not liable for any financial losses incurred based on market analysis shared on our platform.
+            </p>
+        </div>
+    </div>
+
+    <div id="contactModal" class="fixed inset-0 bg-black/50 backdrop-blur-sm hidden flex items-center justify-center p-4 z-50">
+        <div class="bg-white rounded-2xl p-6 max-w-sm w-full text-left shadow-xl relative">
+            <button onclick="closeModal('contactModal')" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 text-lg"><i class="fa-solid fa-xmark"></i></button>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Contact Us</h3>
+            <p class="text-xs text-slate-600 leading-relaxed mb-3">
+                For queries or support, reach out to us via Telegram or Email:
+            </p>
+            <p class="text-xs font-semibold text-blue-600 mb-1">Telegram: @DeepakWadhwaSupport</p>
+            <p class="text-xs font-semibold text-blue-600">Email: support@deepakwadhwa.com</p>
+        </div>
+    </div>
+
+    <script>
+        function openModal(id) {
+            document.getElementById(id).classList.remove('hidden');
+        }
+        function closeModal(id) {
+            document.getElementById(id).classList.add('hidden');
+        }
+    </script>
 </body>
 </html>
